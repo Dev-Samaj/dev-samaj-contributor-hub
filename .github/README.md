@@ -26,7 +26,7 @@ Dev Samaj is a **tech-driven community** focused on fostering collaboration, men
 
 4. **Make your changes and commit:**
    ```bash
-      git commit -m "Added new feature"
+   git commit -m "Added new feature"
    ```
 
 5. **Push your changes:**

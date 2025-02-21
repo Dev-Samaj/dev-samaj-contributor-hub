@@ -46,7 +46,7 @@ Our goal is to **build a thriving open-source community** that promotes **collab
 - Spread the word and invite more developers!  
 
 🔗 Stay updated via our official channels:  
-📢 **[GitHub Discussions](#)** | 💬 **[Discord/Telegram](#)**  
+📢 **[GitHub Discussions](#)** | 💬 **[Discord](https://discord.gg/WPr3CSJs)**  
 
 ---
 

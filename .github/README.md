@@ -35,4 +35,5 @@ Dev Samaj is a **tech-driven community** focused on fostering collaboration, men
    ```
 
 6. **Create a Pull Request and wait for review! 🎉**
+main
 

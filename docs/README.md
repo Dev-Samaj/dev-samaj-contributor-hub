@@ -24,6 +24,7 @@ For reporting security vulnerabilities, refer to our [SECURITY.md](SECURITY.md).
 
 ## 🏛 Governance & Team Roles
 Our team structure is outlined in [GOVERNANCE.md](GOVERNANCE.md) and [TEAM_STRUCTURE.md](TEAM_STRUCTURE.md). 
+main
 
 ## 💬 Join the Discussion
 Feel free to participate in discussions, suggest new ideas, and engage with the community through issues and pull requests.

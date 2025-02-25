@@ -1,0 +1,15 @@
+{
+  "name": "dev-samaj-contributor-hub",
+  "version": "1.0.0",
+  "description": "Welcome to **Dev Samaj Contributor Hub** – an open-source initiative where developers, designers, and tech enthusiasts come together to build meaningful projects.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

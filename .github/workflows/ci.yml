@@ -1,0 +1,38 @@
+name: CI/CD Pipeline  
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Cache Node Modules  # ✅ Caching dependencies
+        uses: actions/cache@v3.4.2
+        with:
+          path: ~/.npm  # Change this if using yarn or pnpm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Setup Node.js  # ✅ Fix cache path
+        uses: actions/setup-node@v4.2.0
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: '**/package-lock.json'  # 🔹 Use correct path
+
+      - name: Install Dependencies  # ✅ Install dependencies correctly
+        run: npm install
+
+      - name: Run Linter
+        run: npm run lint
+
+      - name: Run Tests
+        run: npm test

@@ -13,22 +13,22 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Cache Node Modules  # ✅ Caching dependencies
+      - name: Cache Node Modules
         uses: actions/cache@v3.4.2
         with:
-          path: ~/.npm  # Change this if using yarn or pnpm
+          path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - name: Setup Node.js  # ✅ Fix cache path
+      - name: Setup Node.js
         uses: actions/setup-node@v4.2.0
         with:
           node-version: 18
           cache: npm
-          cache-dependency-path: '**/package-lock.json'  # 🔹 Use correct path
+          cache-dependency-path: '**/package-lock.json'  # ✅ Now this will work!
 
-      - name: Install Dependencies  # ✅ Install dependencies correctly
+      - name: Install Dependencies
         run: npm install
 
       - name: Run Linter
